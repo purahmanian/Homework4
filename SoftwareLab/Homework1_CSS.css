@@ -1,0 +1,30 @@
+
+
+#myBody h3 {
+  background-color: orange;
+}
+
+#myBody table{
+  background-color: black;
+  color: white;
+  border-spacing: 50px;
+  border-style: groove;
+}
+
+#myBody a{
+  text-transform: uppercase;
+  font-family: helvetica;
+  font-size: 30;
+  margin: 1.5em;
+  padding: 20px;
+}
+
+.cell1{
+  color: black;
+  text-transform: uppercase;
+}
+
+.cell2{
+  font-style: italic;
+  text-shadow: 2px 2px #ff0000;
+}

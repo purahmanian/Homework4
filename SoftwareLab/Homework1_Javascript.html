@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> This is my header... </title>
+
+    <script>
+
+      function hide(){
+        var x = document.getElementById("text1");
+        x.style.display = "none";
+      }
+      function show(){
+        var x = document.getElementById("text1");
+        x.style.display = "block";
+      }
+      function format(){
+        var x = document.getElementById("text1");
+        x.style.fontSize = "20px";
+        x.style.color = "red";
+        x.style.backgroundColor = "green";
+        x.style.textAlign = "center";
+      }
+      function reset(){
+        var x = document.getElementById("text1");
+        x.style.fontSize = "14px";
+        x.style.color = "black";
+        x.style.backgroundColor = "white";
+        x.style.textAlign = "left";
+        show();
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <input type="text" id = "text1">
+    <button onclick="hide()"> Click to hide </button>
+    <button onclick="show()"> Click to show </button>
+    <button onclick="format()"> Click to format </button>
+    <button onclick="reset()"> Click to reset </button>
+  </body>
+
+
+</html>
