@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendLocation(View view){
-        Intent intent = new Intent(this, DisplayMap.class);
+        Intent intent = new Intent(this, MapsActivity.class);
         EditText editText =(EditText) findViewById(R.id.edit_message);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
