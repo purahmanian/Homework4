@@ -19,9 +19,19 @@ public class MainActivity extends AppCompatActivity {
     public void sendLocation(View view){
         Intent intent = new Intent(this, MapsActivity.class);
         EditText startLoc =(EditText) findViewById(R.id.start_loc);
-        EditText endLoc =(EditText) findViewById(R.id.end_loc);
         String startString = startLoc.getText().toString();
         intent.putExtra("START_LOC", startString);
+        startActivity(intent);
+    }
+
+    public void route(View view){
+        Intent intent = new Intent(this, MapsActivityRouting.class);
+        EditText startLoc =(EditText) findViewById(R.id.start_loc);
+        EditText endLoc =(EditText) findViewById(R.id.end_loc);
+        String endString = endLoc.getText().toString();
+        String startString = startLoc.getText().toString();
+        intent.putExtra("START_LOC", startString);
+        intent.putExtra("END_LOC", endString);
         startActivity(intent);
     }
 

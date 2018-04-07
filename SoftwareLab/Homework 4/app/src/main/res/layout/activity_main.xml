@@ -12,6 +12,11 @@
         android:layout_weight="1"
         android:gravity="top"
         android:hint="@string/start_loc" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendLocation"
+        android:text="@string/button_send" />
 
     <EditText
         android:id="@+id/end_loc"
@@ -24,7 +29,9 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="sendLocation"
-        android:text="@string/button_send" />
+        android:onClick="route"
+        android:text="Route" />
+
+
 
 </LinearLayout>
