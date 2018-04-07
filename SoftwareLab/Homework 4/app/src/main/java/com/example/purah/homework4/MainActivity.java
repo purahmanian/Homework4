@@ -8,7 +8,6 @@ import android.widget.EditText;
 import com.example.purah.homework4.R;
 
 public class MainActivity extends AppCompatActivity {
-    public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
     private View view;
 
     @Override
@@ -19,9 +18,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendLocation(View view){
         Intent intent = new Intent(this, MapsActivity.class);
-        EditText editText =(EditText) findViewById(R.id.start_loc);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
+        EditText startLoc =(EditText) findViewById(R.id.start_loc);
+        EditText endLoc =(EditText) findViewById(R.id.end_loc);
+        String startString = startLoc.getText().toString();
+        intent.putExtra("START_LOC", startString);
         startActivity(intent);
     }
 

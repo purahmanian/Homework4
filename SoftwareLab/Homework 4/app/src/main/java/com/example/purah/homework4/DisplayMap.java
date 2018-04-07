@@ -34,7 +34,7 @@ public class DisplayMap extends AppCompatActivity {
         //Log.d("MyApp","I am here \n \n");
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
-        final String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        final String message = intent.getStringExtra("START_LOC");
 
         final double[] lat = new double[1];
         final double[] lng = new double[1];
